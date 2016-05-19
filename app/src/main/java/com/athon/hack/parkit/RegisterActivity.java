@@ -3,9 +3,11 @@ package com.athon.hack.parkit;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class RegisterActivity extends Activity {
     private static final String[] zone_numbers = {"אזור 1 - מקור ברוך", "אזור 2 - זכרון משה",
@@ -25,5 +27,22 @@ public class RegisterActivity extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_dropdown_item, zone_numbers);
         dropdown.setAdapter(adapter);
+        dropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapter, View v,
+                                       int position, long id) {
+                // On selecting a spinner item
+                String chosenZone = adapter.getItemAtPosition(position).toString();
+                // Showing selected spinner item
+                Toast.makeText(getApplicationContext(),
+                        "Selected Country : " + chosenZone, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
     }
+
 }
