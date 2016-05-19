@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">ParkIt</string>
-    <string name="evia">EVI</string>
+    <string name="RegistrationForm">Registration Form</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Email">Email Address</string>
+    <string name="UserName">UserName</string>
+    <string name="Password">Password</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="checkbox">From Jerusalem</string>
+    <string name="ParkingZone">Parking Zone</string>
+    <string-array name="zones_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="hdrtjt">Parking Zone</string>
 </resources>
