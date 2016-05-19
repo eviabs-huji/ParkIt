@@ -9,6 +9,24 @@
     android:paddingTop="16dp"
     tools:context="com.athon.hack.parkit.LogInActivity">
 
+        <LinearLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentTop="true"
+
+        android:orientation="vertical" >
+
+
+
         <TextView
 
             android:id="@+id/textView1"
@@ -89,9 +107,10 @@
 
             android:layout_gravity="center_horizontal"
 
-            android:onClick="startSignIn"
+            android:onClick="startsignin"
 
             android:text="@string/SignIn" />
 
+    </LinearLayout>
 
 </RelativeLayout>
